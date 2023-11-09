@@ -17,6 +17,9 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
+
+
+//good 
 enum class BottomNavigationItems() {
 
     Home(),
@@ -37,21 +40,19 @@ fun BottomNavication(navController: NavController?, bottomNavigationItems: Botto
     ) {
 
 
-        for (item in bottomnaviCAtionlist){
-
-
+        for (item in bottomnaviCAtionlist) {
 
 
         }
-        for (item in bottomnaviCAtionlist){
+        for (item in bottomnaviCAtionlist) {
 
             Icon(
-            item.icon,
-            contentDescription = item.dis,
-            modifier = Modifier
-                .size(24.dp)
-                .background(if (bottomNavigationItems == BottomNavigationItems.Home) Color.Black else Color.Cyan)
-        )
+                item.icon,
+                contentDescription = item.dis,
+                modifier = Modifier
+                    .size(24.dp)
+                    .background(if (bottomNavigationItems == BottomNavigationItems.Home) Color.Black else Color.Cyan)
+            )
 
 
         }
